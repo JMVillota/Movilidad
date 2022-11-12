@@ -1,116 +1,122 @@
-<?php require_once('assets/db/db-connect.php') ?>
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-ES">
+
+<!-- Mirrored from pulla.digital/about/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Sep 2022 15:37:19 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="wp-content/themes/utndigital/assets/img/UTN.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="wp-content/themes/utndigital/assets/img/logo.png" type="image/png" sizes="16x16">
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
     <title>Rutas</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="wp-content/themes/utndigital/assets/css/bootstrap.min0a4b.css">
-    <link rel="stylesheet" href="assets/fullcalendar/lib/main.css">
-    <link rel='stylesheet' id='style-css-css' href='wp-content/themes/utndigital/assets/css/style.min0a4b.css'
-        media='all' />
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/fullcalendar/lib/main.min.js"></script>
-    <script src="assets/fullcalendar/lib/locales-all.js"></script>
+    <link rel="canonical" href="index.html" />
 
-    <link rel='stylesheet' href='wp-includes/css/dist/block-library/style.minf049.css' />
-    <link rel='stylesheet' href='wp-content/themes/utndigital/style8a54.css' />
+    <link rel='dns-prefetch' href='http://s.w.org/' />
+    <link rel="alternate" type="application/rss+xml" title="UTNDigital &raquo; Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="UTNDigital &raquo; Comments Feed" href="comments/feed/index.html" />
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.minf049.css' media='all' />
 
-    <link rel='stylesheet' id='owl-css-css' href='wp-content/themes/utndigital/assets/css/owl.carousel.min0a4b.css' />
-    <link rel='stylesheet' id='owl-default-css'
-        href='wp-content/themes/utndigital/assets/css/owl.theme.default.min0a4b.css' />
-    <link rel='stylesheet' id='locomotive-css-css'
-        href='wp-content/themes/utndigital/assets/css/locomotive-scroll0a4b.css' />
-    <link rel='stylesheet' id='style-css-css' href='wp-content/themes/utndigital/assets/css/style.min0a4b.css' />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html" />
+    <link rel='stylesheet' id='utndigital-style-css' href='wp-content/themes/utndigital/style8a54.css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css-css' href='wp-content/themes/utndigital/assets/css/bootstrap.min0a4b.css' media='all' />
+    <link rel='stylesheet' id='owl-css-css' href='wp-content/themes/utndigital/assets/css/owl.carousel.min0a4b.css' media='all' />
+    <link rel='stylesheet' id='owl-default-css' href='wp-content/themes/utndigital/assets/css/owl.theme.default.min0a4b.css' media='all' />
+    <link rel='stylesheet' id='locomotive-css-css' href='wp-content/themes/utndigital/assets/css/locomotive-scroll0a4b.css' media='all' />
+    <link rel='stylesheet' id='style-css-css' href='wp-content/themes/utndigital/assets/css/style.min0a4b.css' media='all' />
+    <link rel="https://api.w.org/" href="wp-js/index.html" />
+    <link rel="alternate" type="application/js" href="wp-js/wp/v2/pages/7.html" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
 
-    <link rel='shortlink' href='calendario.php' />
-    <style>
-    table,
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    tr {
-        border-color: #ededed !important;
-        border-style: solid;
-        border-width: 3px !important;
-    }
-    </style>
+
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.minf049.css?ver=6.0' media='all' />
+    <link rel='stylesheet' id='utndigital-style-css' href='wp-content/themes/utndigital/style8a54.css?ver=1.0.0' media='all' />
+    <link rel='stylesheet' id='about-css-css' href='wp-content/themes/utndigital/assets/css/about.min4fda.css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css-css' href='wp-content/themes/utndigital/assets/css/bootstrap.min4fda.css' media='all' />
+    <link rel='stylesheet' id='owl-css-css' href='wp-content/themes/utndigital/assets/css/owl.carousel.min4fda.css' media='all' />
+    <link rel='stylesheet' id='owl-default-css' href='wp-content/themes/utndigital/assets/css/owl.theme.default.min4fda.css' media='all' />
+    <link rel='stylesheet' id='locomotive-css-css' href='wp-content/themes/utndigital/assets/css/locomotive-scroll4fda.css' media='all' />
+    <link rel='stylesheet' id='swiper-css-css' href='wp-content/themes/utndigital/assets/css/swiper-bundle.min4fda.css' media='all' />
+    <link rel='stylesheet' id='style-css-css' href='wp-content/themes/utndigital/assets/css/style.min4fda.css' media='all' />
 </head>
 <div class="preloader">
     <div class="text-wrapper">
         <div class="text-animation">
-            <div class="loader-font text page-name page-Contact"><span class="dot"></span> <span class="title-wrap">
-                    <span class="title-span">Calendario</span> </span>
+            <div class="loader-font text page-name page-About"><span class="dot"></span> <span class="title-wrap"> <span
+                        class="title-span">Rutas</span> </span>
             </div>
         </div>
     </div>
 </div>
 
-<body id="js-scroll " class="page-template-default page page-id-59 o-scroll" data-scroll-container>
-
-    <div class="main-logo">
-        <a href="index.html">
-            <img src="wp-content/themes/utndigital/assets/img/logo_large.png" alt="Inicio" />
-        </a>
-    </div>
-    <div class="main-menu">
-        <div class="main-menu-icon">
-            <span></span>
-            <span></span>
+<body id="js-scroll " class="home page-template-default page page-id-59 o-scroll" data-scroll-container>
+    <div id="page" class="site">
+        <div class="main-logo">
+            <a href="index.html">
+                <img src="wp-content/themes/utndigital/assets/img/logo_large.png" alt="Inicio" />
+            </a>
         </div>
-    </div>
-    <div class="main-menu-wrapper">
-        <div class="main-menu-content">
-            <div class="menu-menu-1-container">
-                <ul id="primary-menu" class="menu">
-                    <li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="index.html">Inicio<img class="image"
-                                src=wp-content/uploads/2022/04/calendario.png></a></li>
-                    <li id="menu-item-671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671"><a href="Info.html">Información<img class="image"
-                                src=wp-content/uploads/2022/03/contacto.png></a></li>
-                </ul>
+        <div class="main-menu">
+            <div class="main-menu-icon">
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-
-
-    <div class="section about-parallax" data-scroll-section>
-        <div
-            class="container-wrapper container-width-4 vartical-padding-1 two-side-padding-mobile vartical-padding-top-mobile-3">
-            <div class="container-fluid gx-0">
-                <div class="row gx-0">
-                    <div class="col-18 col-lg-18 gx-0">
-                        <div class="column-holder svg-parent-left">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1994.9056073657796!2d-78.4699519!3d-0.1081339!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1668280298058!5m2!1ses!2sec" width="1600" height="1450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
+        <div class="main-menu-wrapper">
+            <div class="main-menu-content">
+                <div class="menu-menu-1-container">
+                    <ul id="primary-menu" class="menu">
+                        <li id="menu-item-146"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-146">
+                            <a href="index.html" aria-current="page">Inicio<img class="image"
+                                    src=wp-content/uploads/2022/04/inicio.png>
+                            </a>
+                        </li>
+                        <li id="menu-item-193"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a
+                                href="rutas.html">Rutas<img class="image"
+                                    src=wp-content/uploads/2022/04/calendario.png></a></li>
+                    </ul>
+                </div>
+                <div class="social-menu-wrapper">
                 </div>
             </div>
         </div>
+
+
+    <div id="site-wrapper" style="position:relative">
+        <main id="primary" class="site-main">
+            <div class="menu-overlay"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1994.9056073657796!2d-78.4699519!3d-0.1081339!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1668280298058!5m2!1ses!2sec" width="1600" height="1450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
     </div>
 
+    </div>
+    <script src='wp-content/themes/utndigital/js/navigation8a54.js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/jquery.min8a54.js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/TweenMax.min8a54.js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/owl.carousel.min8a54.js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/locomotive-scroll.min8a54.js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/swiper-bundle.min8a54.js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/main8a54.js'></script>
 
-    <!-- Js personalizado -->
-    <script src='wp-content/themes/utndigital/assets/js/owl.carousel.min8a54.js' id='pulladigital-owl-carousel-js'>
-    </script>
-
-    <script src='wp-content/themes/utndigital/assets/js/locomotive-scroll.min8a54.js?ver=1.0.0'
-        id='locomotive-scroll-js'></script>
-    <script src='wp-content/themes/utndigital/assets/js/swiper-bundle.min8a54.js?ver=1.0.0' id='swiper-js-js'></script>
-
-    <script src='wp-content/themes/utndigital/assets/js/main8a54.js?ver=1.0.0' id='pulladigital-main-js'></script>
 </body>
-<script>
-var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
-</script>
-<script src="assets/js/script.js"></script>
+
+<!-- Mirrored from pulla.digital/about/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Sep 2022 15:37:46 GMT -->
 
 </html>
+<style>
+    html {
+        margin-top: 0px !important;
+    }
+    
+    .site-footer {
+        position: relative;
+        background: #fff;
+        z-index: 9;
+    }
+</style>
+</div>
