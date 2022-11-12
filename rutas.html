@@ -1,0 +1,116 @@
+<?php require_once('assets/db/db-connect.php') ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="wp-content/themes/utndigital/assets/img/logo.png" type="image/png" sizes="16x16">
+    <title>Calendario FICA</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="wp-content/themes/utndigital/assets/css/bootstrap.min0a4b.css">
+    <link rel="stylesheet" href="assets/fullcalendar/lib/main.css">
+    <link rel='stylesheet' id='style-css-css' href='wp-content/themes/utndigital/assets/css/style.min0a4b.css'
+        media='all' />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/fullcalendar/lib/main.min.js"></script>
+    <script src="assets/fullcalendar/lib/locales-all.js"></script>
+
+    <link rel='stylesheet' href='wp-includes/css/dist/block-library/style.minf049.css' />
+    <link rel='stylesheet' href='wp-content/themes/utndigital/style8a54.css' />
+
+    <link rel='stylesheet' id='owl-css-css' href='wp-content/themes/utndigital/assets/css/owl.carousel.min0a4b.css' />
+    <link rel='stylesheet' id='owl-default-css'
+        href='wp-content/themes/utndigital/assets/css/owl.theme.default.min0a4b.css' />
+    <link rel='stylesheet' id='locomotive-css-css'
+        href='wp-content/themes/utndigital/assets/css/locomotive-scroll0a4b.css' />
+    <link rel='stylesheet' id='style-css-css' href='wp-content/themes/utndigital/assets/css/style.min0a4b.css' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html" />
+
+    <link rel='shortlink' href='calendario.php' />
+    <style>
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+        border-color: #ededed !important;
+        border-style: solid;
+        border-width: 3px !important;
+    }
+    </style>
+</head>
+<div class="preloader">
+    <div class="text-wrapper">
+        <div class="text-animation">
+            <div class="loader-font text page-name page-Contact"><span class="dot"></span> <span class="title-wrap">
+                    <span class="title-span">Rutas</span> </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body id="js-scroll " class="page-template-default page page-id-59 o-scroll" data-scroll-container>
+
+    <div class="main-logo">
+        <a href="index.html">
+            <img src="wp-content/themes/utndigital/assets/img/UTN.png" alt="Inicio" />
+        </a>
+    </div>
+    <div class="main-menu">
+        <div class="main-menu-icon">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="main-menu-wrapper">
+        <div class="main-menu-content">
+            <div class="menu-menu-1-container">
+                <ul id="primary-menu" class="menu">
+                    <li id="menu-item-146"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-146">
+                        <a href="index.html" aria-current="page">Inicio<img class="image"
+                                src=wp-content/uploads/2022/04/inicio.png>
+                        </a>
+                    </li>
+                    <li id="menu-item-193"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a
+                            href="Info.html">Información<img class="image"
+                                src=wp-content/uploads/2022/04/calendario.png></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section about-parallax" data-scroll-section>
+   
+                    
+                        <div class="column-holder svg-parent-left">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1994.9056073657796!2d-78.4699519!3d-0.1081339!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1668280298058!5m2!1ses!2sec" width="1600" height="1450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+    </div>
+
+    <!-- Js personalizado -->
+    <script src='wp-content/themes/utndigital/assets/js/owl.carousel.min8a54.js' id='pulladigital-owl-carousel-js'>
+    </script>
+
+    <script src='wp-content/themes/utndigital/assets/js/locomotive-scroll.min8a54.js?ver=1.0.0'
+        id='locomotive-scroll-js'></script>
+    <script src='wp-content/themes/utndigital/assets/js/swiper-bundle.min8a54.js?ver=1.0.0' id='swiper-js-js'></script>
+
+    <script src='wp-content/themes/utndigital/assets/js/main8a54.js?ver=1.0.0' id='pulladigital-main-js'></script>
+</body>
+<script>
+var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
+</script>
+<script src="assets/js/script.js"></script>
+
+</html>
